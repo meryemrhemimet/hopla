@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hopla
 
-## Getting Started
+Hopla is a small catalog website for kids' products. It is not an online store: visitors browse the catalog, open a product page, view the photos/details, then contact Hopla on WhatsApp to order.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Useful checks:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+```
 
-## Learn More
+## Edit products
 
-To learn more about Next.js, take a look at the following resources:
+Products live in [`data/products.ts`](data/products.ts). To add a product:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Add the product photos to `public/images`.
+2. Add one object to the `products` array.
+3. Use image paths like `/images/my-photo.jpg`.
+4. Keep missing facts as `TODO:` until confirmed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Prices use MAD and display as `149 DH` when `price` is a number. Use `price: null` when the price still needs confirmation.
 
-## Deploy on Vercel
+## Edit reviews
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Reviews live in [`data/reviews.ts`](data/reviews.ts). The current reviews are placeholders and should be replaced with real customer messages before launch.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Two review types are supported:
+
+- `type: "text"` for normal quotes.
+- `type: "screenshot"` for a WhatsApp or Instagram screenshot image.
+
+## Change WhatsApp number
+
+The WhatsApp number is read from:
+
+```bash
+NEXT_PUBLIC_WHATSAPP_NUMBER=212751246331
+```
+
+Copy `.env.example` to `.env.local` and change the number there. Keep only digits, without `+`.
+
+## Change the public site URL
+
+Set this before deploying so product links and sharing metadata are absolute:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+```
+
+## Main Copy And FAQ
+
+Most site copy is in [`lib/content.ts`](lib/content.ts), including the tagline, navigation labels, FAQ answers, trust points, and the placeholder checklist.
+
+## Deploy On Vercel
+
+1. Push the project to a Git repository.
+2. Import it in Vercel.
+3. Add the environment variables from `.env.example`.
+4. Deploy. No database, API key, or external service is required.
+
+## Asset Notes
+
+The supplied product photos are in `public/images`. The logo was supplied as a PDF; the header uses a lightweight Hopla wordmark component inspired by the visible logo because no transparent PNG/SVG logo asset was available.
