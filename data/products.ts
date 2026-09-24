@@ -8,7 +8,7 @@ export type Product = {
   slug: string;
   name: string;
   price: number | null;
-  category: "Matelas nomades" | "Couvertures";
+  category: "Tapis de sieste" | "Couvertures";
   ageRange?: string;
   shortDescription: string;
   description: string;
@@ -32,9 +32,9 @@ export const products: Product[] = [
   {
     id: "nap-dino-bleu",
     slug: "matelas-nomade-dino-bleu",
-    name: "Matelas nomade Dino bleu",
-    price: null,
-    category: "Matelas nomades",
+    name: "Tapis de sieste Dino bleu",
+    price: 399,
+    category: "Tapis de sieste",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:
       "Motif dinosaures bleu et jaune, pensé pour les siestes et les petites sorties.",
@@ -47,7 +47,7 @@ export const products: Product[] = [
       color: "Bleu, jaune, blanc",
     },
     images: [
-      { src: "/images/dino.png", alt: "Matelas nomade Hopla motif dinosaures bleu et jaune" },
+      { src: "/images/dino.png", alt: "Tapis de sieste Hopla motif dinosaures bleu et jaune" },
       { src: "/images/product.png", alt: "Aperçu des nouveaux motifs Hopla avec modèle Dino bleu" },
     ],
     colors: ["Bleu"],
@@ -58,9 +58,9 @@ export const products: Product[] = [
   {
     id: "nap-dino-green",
     slug: "matelas-nomade-dino-green",
-    name: "Matelas nomade Dino green",
-    price: null,
-    category: "Matelas nomades",
+    name: "Tapis de sieste Dino green",
+    price: 399,
+    category: "Tapis de sieste",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:
       "Motif dinosaures verts et roses, avec une ambiance douce et ludique.",
@@ -73,8 +73,8 @@ export const products: Product[] = [
       color: "Vert, rose, beige",
     },
     images: [
-      { src: "/images/dino_vert.png", alt: "Matelas nomade Hopla Dino green déplié" },
-      { src: "/images/Dinosaur_20260910_095758_0000.png", alt: "Matelas nomade Hopla Dino green roulé" },
+      { src: "/images/dino_vert.png", alt: "Tapis de sieste Hopla Dino green déplié" },
+      { src: "/images/Dinosaur_20260910_095758_0000.png", alt: "Tapis de sieste Hopla Dino green roulé" },
     ],
     colors: ["Vert"],
     badge: "new",
@@ -84,9 +84,9 @@ export const products: Product[] = [
   {
     id: "nap-dino-jaune",
     slug: "matelas-nomade-dino-jaune",
-    name: "Matelas nomade Dino jaune",
-    price: null,
-    category: "Matelas nomades",
+    name: "Tapis de sieste Dino jaune",
+    price: 399,
+    category: "Tapis de sieste",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:
       "Version lumineuse du motif dinosaure, avec détails jaunes et orange.",
@@ -99,8 +99,8 @@ export const products: Product[] = [
       color: "Jaune, orange, bleu clair",
     },
     images: [
-      { src: "/images/dino_jaune.png", alt: "Matelas nomade Hopla Dino jaune roulé" },
-      { src: "/images/dino_jaune2.jpg", alt: "Deuxième photo du matelas nomade Dino jaune" },
+      { src: "/images/dino_jaune.png", alt: "Tapis de sieste Hopla Dino jaune roulé" },
+      { src: "/images/dino_jaune2.jpg", alt: "Deuxième photo du tapis de sieste Dino jaune" },
     ],
     colors: ["Jaune"],
     inStock: true,
@@ -109,9 +109,9 @@ export const products: Product[] = [
   {
     id: "nap-sous-leau",
     slug: "matelas-nomade-sous-leau",
-    name: "Matelas nomade Sous l'eau",
-    price: null,
-    category: "Matelas nomades",
+    name: "Tapis de sieste Sous l'eau",
+    price: 399,
+    category: "Tapis de sieste",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:
       "Motif marin bleu clair avec poissons, coraux et tortue.",
@@ -124,7 +124,7 @@ export const products: Product[] = [
       color: "Bleu clair, multicolore",
     },
     images: [
-      { src: "/images/sous_leau.png", alt: "Matelas nomade Hopla Sous l'eau roulé" },
+      { src: "/images/sous_leau.png", alt: "Tapis de sieste Hopla Sous l'eau roulé" },
       { src: "/images/product2.png", alt: "Aperçu du motif marin Hopla" },
     ],
     colors: ["Bleu"],
@@ -135,9 +135,9 @@ export const products: Product[] = [
   {
     id: "nap-koala",
     slug: "matelas-nomade-koala-dream",
-    name: "Matelas nomade Koala dream",
-    price: null,
-    category: "Matelas nomades",
+    name: "Tapis de sieste Koala dream",
+    price: 399,
+    category: "Tapis de sieste",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:
       "Motif koala rose, doux et joyeux pour les moments de repos.",
@@ -150,7 +150,7 @@ export const products: Product[] = [
       color: "Rose, vert, gris",
     },
     images: [
-      { src: "/images/koala_dream.png", alt: "Matelas nomade Hopla Koala dream roulé" },
+      { src: "/images/koala_dream.png", alt: "Tapis de sieste Hopla Koala dream roulé" },
     ],
     colors: ["Rose"],
     inStock: true,
@@ -159,9 +159,9 @@ export const products: Product[] = [
   {
     id: "nap-elephant",
     slug: "matelas-nomade-elephants-rayures",
-    name: "Matelas nomade Éléphants rayés",
-    price: null,
-    category: "Matelas nomades",
+    name: "Tapis de sieste Éléphants rayés",
+    price: 399,
+    category: "Tapis de sieste",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:
       "Motif animaux sur rayures roses, avec éléphants, girafes et petits véhicules.",
@@ -174,7 +174,7 @@ export const products: Product[] = [
       color: "Rose, blanc, bleu doux",
     },
     images: [
-      { src: "/images/elephant.png", alt: "Matelas nomade Hopla motif éléphants et rayures roses" },
+      { src: "/images/elephant.png", alt: "Tapis de sieste Hopla motif éléphants et rayures roses" },
       { src: "/images/elephant2.png", alt: "Détail du motif éléphants Hopla" },
     ],
     colors: ["Rose"],
@@ -185,7 +185,7 @@ export const products: Product[] = [
     id: "blanket-panda",
     slug: "couverture-panda",
     name: "Couverture Panda",
-    price: null,
+    price: 159,
     category: "Couvertures",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:
@@ -211,7 +211,7 @@ export const products: Product[] = [
     id: "blanket-broderie",
     slug: "couverture-broderie-fleurie",
     name: "Couverture broderie fleurie",
-    price: null,
+    price: 149,
     category: "Couvertures",
     ageRange: "TODO: confirmer l'âge conseillé",
     shortDescription:

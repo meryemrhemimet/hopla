@@ -176,7 +176,7 @@ function LifestyleSection() {
           <div className="relative aspect-[1024/661]">
             <Image
               src="/images/product2.png"
-              alt="Matelas nomade Hopla motif marin"
+              alt="Tapis de sieste Hopla motif marin"
               fill
               sizes="(min-width: 1024px) 54vw, 92vw"
               className="object-cover object-center"

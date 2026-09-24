@@ -23,7 +23,7 @@ export const siteContent = {
   hero: {
     eyebrow: "Catalogue Hopla",
     title: "Son petit coin, partout avec lui.",
-    body: "Des matelas nomades et couvertures doux, faciles a transporter, pour accompagner les petites siestes et les grandes aventures.",
+    body: "Des tapis de sieste et couvertures doux, faciles a transporter, pour accompagner les petites siestes et les grandes aventures.",
   },
   trust: [
     {
